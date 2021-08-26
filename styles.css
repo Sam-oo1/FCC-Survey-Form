@@ -1,0 +1,125 @@
+body {
+    background: url("https://images.unsplash.com/photo-1546483875-ad9014c88eba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1948&q=80") no-repeat fixed;
+    background-position: center;
+    font-family: 'Roboto',sans-serif;
+    background-size: cover;
+}
+
+/* Heading Section */
+
+main {
+    color: yellow;
+    font-size: 1.8em;
+    margin: 5%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(44, 43, 43, 0.411);
+    border-radius: 10px;
+}
+
+/* Brand-logo_section */
+
+.brand_logo {
+    width: 20%;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+}
+
+.logo {
+    margin: 50%;
+    margin-top: 30%;
+    width: 50%;
+    border-radius: 50%;
+    position: sticky;
+}
+
+
+/* Form Section */
+
+.form-section {
+    background-color: rgba(44, 43, 43, 0.8);
+    width: 60%;
+    padding: 3%;
+    border-radius: 10px; 
+    margin-left: 30%;
+    color: white;   
+}
+
+.form-group {
+    font-size: 1.2em;
+    padding: 0.8%;
+    line-height: 2em;
+    margin: 0.4em;
+}
+
+.form-group label {
+    font-size: 1.2em;
+}
+
+.form-group .text-inputs {
+    width: -webkit-fill-available;
+    font-size: 0.8em;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+textarea {
+    font-family: 'Red Hat Display',sans-serif;
+}
+
+#submit {
+    width: -webkit-fill-available;
+    margin-left: 1%;
+    padding: 1%;
+    font-size: 1.2em;
+    border-radius: 10px;
+    background-color:yellow;
+}
+
+/* Media Querries */
+
+/* Extra Small Devices (phones,etc.) */
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 0.8em;
+        line-height: 1em;
+    }
+
+    main {
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+
+    .form-section {
+        margin: auto;
+    }
+
+    .form-group {
+        margin: 0.8em;
+        line-height: 2em;
+    }
+
+    .brand_logo {
+        margin: auto;
+        position: relative;
+        margin: 0 25%;
+        width: 35%;
+    }
+
+    #submit {
+        border-radius: 5px;
+    }
+}
+
+/* For tablets */
+
+@media only screen and (max-width: 1100px) {
+    .brand_logo {
+        margin-top: 7.5px;
+    }
+    .logo {
+        width: 60%;
+    }
+}

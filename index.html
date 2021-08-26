@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <main>
+        <h1 id="title">HClub survey form.</h1>
+        <p id="description">Thank you for taking your time to help us improve our club.</p>
+    </main>
+    <div class="content_section">
+        <div class="brand_logo">
+            <img class="logo" src="https://i.pinimg.com/originals/06/70/02/06700252249330620e29c37515a6bd1c.jpg" alt="fitness-logo">
+        </div>
+        <div class="form-section">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label><br>
+                    <input class="text-inputs" type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label><br>
+                    <input class="text-inputs" type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age</label><br>
+                    <input class="text-inputs" type="number" id="number" min="15" max="55" placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <label for="dropdown">Which option describes your current role?</label><br>
+                    <select class="text-inputs" name="roles" id="dropdown">
+                        <option value="select" disabled selected>Select Current Role</option>
+                        <option value="student">Student</option>
+                        <option value="full_time_job">Full time Job</option>
+                        <option value="full_time_learner">Full time learner</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="radio-buttons">Would you recommend our club to someone else?</label><br>
+                    <div id="radio-buttons">
+                        <input id="definitely" type="radio" name="recommend_choice" value="name_value1">
+                        <label for="definitely">Definitely</label><br>
+                        <input id="maybe" type="radio" name="recommend_choice" value="name_value2">
+                        <label for="maybe">Maybe</label><br>
+                        <input id="not_sure" type="radio" name="recommend_choice" value="name_value2">
+                        <label for="not_sure">Not Sure</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dropdown2">What is your favourite feature at HClub.</label><br>
+                    <select class="text-inputs" name="features" id="dropdown2">
+                        <option value="select" disabled selected>Select Features</option>
+                        <option value="trainers">Trainers</option>
+                        <option value="equipments">Equipments</option>
+                        <option value="environment">Environment</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="checkboxes">Which fitness program would you like to choose?</label><br>
+                    <div id="program_checkboxes">
+                        <input id="upper_body_training" type="checkbox" value="ubt">
+                        <label for="upper_body_training">Upper Body Training</label><br>
+                        <input id="lower_body_training" type="checkbox" value="lbt">
+                        <label for="lower_body_training">Lower Body Training</label><br>
+                        <input id="full_body_training" type="checkbox" value="fbt">
+                        <label for="full_body_training">Full Body Training</label><br>
+                        <input id="abs_training" type="checkbox" value="abst">
+                        <label for="abs_training">Abs training</label><br>
+                        <input id="burn_fat" type="checkbox" value="burn_fat">
+                        <label for="burn_fat">Burn Fat</label><br>
+                        <input id="gain_muscles" type="checkbox" value="gain_muscles">
+                        <label for="gain_muscles">Gain Muscles</label><br>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Any comments or suggestions.</label><br>
+                    <textarea class="text-inputs" name="" id="textarea" cols="30" rows="10"></textarea>
+                    </div>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
